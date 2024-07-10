@@ -1,1 +1,1 @@
-# Notes-App-CICD
+# Weather-App-CICD
