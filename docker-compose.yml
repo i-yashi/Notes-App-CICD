@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  web:
+    image: yashi01/weather-app
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html
+      - ./style.css:/usr/share/nginx/html/style.css
+      - ./script.js:/usr/share/nginx/html/script.js
+    restart: unless-stopped
